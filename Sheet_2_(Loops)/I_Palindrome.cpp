@@ -11,14 +11,10 @@ bool isPalindrome(int N) {
 int main() {
     int N;
     cin >> N;
-
-    // Print N in reversed order without leading zeroes
     string strN = to_string(N);
     reverse(strN.begin(), strN.end());
     int revN = stoi(strN);
     cout << revN << endl;
-
-    // Check if N is a palindrome number
     cout << (isPalindrome(N) ? "YES" : "NO") << endl;
 
     return 0;
